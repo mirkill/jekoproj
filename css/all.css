@@ -1,0 +1,303 @@
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 100.1%;
+}
+
+body {
+	font: 64% Tahoma, Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+	min-width: 806px;
+	position: relative;
+}
+
+body {
+	background: url(../img/body.gif) repeat-x;
+	color: #616161;
+}
+
+form,fieldset {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 200%;
+	margin: 5px 0 10px;
+}
+
+h3 {
+	font-size: 150%;
+	margin: 5px 0 10px 10px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 120%;
+	line-height: 116%;
+}
+
+li {
+	margin: 3px 0;
+	font-size: 120%;
+}
+
+.logo {
+	background: url(../img/logo.gif) no-repeat;
+}
+
+.logo {
+	width: 353px;
+	height: 80px;
+	display: block;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	left: 0;
+	z-index: 3;
+}
+
+.logo a {
+	height: 100%;
+	display: block;
+}
+
+.custom-doc {
+	width: 806px;
+	/* min-height: 100%; */
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.bd {
+	padding: 135px 0 15px;
+	position: relative;
+	width: 100%;
+}
+
+.header {
+	margin-top: -30px;
+	width: 95%;
+	float: left;
+	color: white;
+}
+
+.footer {
+	margin-top: 0px;
+}
+
+.navigation li {
+	color: white;
+	display: inline;
+	font-size: 150%;
+	font-weight: bold;
+	list-style: none;
+	margin-left: 15px;
+}
+
+.navigation li a {
+	color: #fff;
+}
+
+.error {
+	color: red;
+}
+
+#register_form LABEL,#login_form LABEL {
+	float: left;
+	width: 80px;
+}
+
+#register_form li {
+	margin-bottom: 5px;
+}
+
+.login-register {
+	float: right;
+	margin: -15px;
+}
+
+.login-register .username {
+	font-size: 120%;
+}
+
+.login-register a {
+	color: #fff;
+}
+
+.login li {
+	font-size: 100%;
+}
+
+/*--layout_box--*/
+.layout_box {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.layout_box_t {
+	margin-left: 16px;
+	margin-right: 16px;
+	height: 9px;
+}
+
+.layout_box_t div { /*position: relative;*/
+	width: 16px;
+	height: 9px;
+	overflow: hidden;
+}
+
+.layout_box_tl {
+	float: left;
+	margin-left: -16px;
+}
+
+.layout_box_tr {
+	float: right;
+	margin-right: -16px;
+}
+
+.layout_box_b {
+	margin-left: 17px;
+	margin-right: 17px;
+	height: 17px;
+}
+
+.layout_box_b div { /*position:relative;*/
+	width: 17px;
+	height: 17px;
+	overflow: hidden;
+}
+
+.layout_box_bl {
+	margin-left: -17px;
+	float: left;
+}
+
+.layout_box_br {
+	margin-right: -17px;
+	float: right;
+}
+
+.layout_box_right {
+	padding: 0 7px 0 7px;
+}
+
+.layout_box_holder {
+	min-height: 100px;
+	overflow: hidden;
+	padding: 0 10px 6px;
+}
+
+.layout_box_t {
+	background: url(../img/top.png) repeat-x;
+}
+
+.layout_box_t div {
+	background-repeat: no-repeat;
+}
+
+.layout_box_tl {
+	background-image: url(../img/top_left.png);
+}
+
+.layout_box_tr {
+	background-image: url(../img/top_right.png);
+}
+
+.layout_box_b {
+	background: url(../img/bottom.png) repeat-x;
+}
+
+.layout_box_bl {
+	background-image: url(../img/bottom_left.png);
+}
+
+.layout_box_br {
+	background-image: url(../img/bottom_right.png);
+}
+
+.layout_box_left {
+	background: url(../img/left.png) repeat-y;
+}
+
+.layout_box_right {
+	background: url(../img/right.png) repeat-y 100% 0;
+}
+
+.layout_box_holder {
+	background: #fff url(../img/gradient.gif) repeat-x 0 100%;
+}
+
+/* --------------------- -----------*/
+.profile_form {
+	float: left;
+}
+
+/* .notification {
+	float: left;
+	width:100%;
+	color: #30c;
+	font-size: 110%;
+}*/
+.profile_clan {
+	float: left;
+	width: 200px;
+}
+
+.pwd_update {
+	width: 230px;
+	float: left;
+}
+
+.profile_left {
+	width: 230px;
+	float: left;
+}
+
+.profile_center {
+	width: 200px;
+	float: left;
+}
+
+.dark {
+	background-color: #F3F6F7;
+}
+
+.heading {
+	float: left;
+	font-size: 12px;
+	line-height: 14px;
+	/*padding: 5px 0 5px 16px;*/
+	margin: 3px;
+	text-align: center;
+	width: 100%;
+	background: none repeat scroll 0 0 #F3F6F7;
+	border-bottom: 1px solid #CDDAE3;
+	border-top: 1px solid #CDDAE3;
+}
+.new_member .cl_1{
+	float: left;
+	width: 215px;
+}
+.new_member .cl_2{
+	float: left;
+	width: 50px;
+}
+.new_member{
+	width: 300px;
+	float: left;
+}
