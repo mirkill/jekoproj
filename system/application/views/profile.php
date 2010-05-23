@@ -213,7 +213,7 @@ foreach($clan_list as $clan){
 <!--  ======================= -->
 <div class="resume" style="display: none;">
 form for resume
-<br>В стадии разработки</br>
+<br>пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ</br>
 </div>
 <!--  ======================= -->
 
@@ -285,7 +285,7 @@ $i++;
 						<div class="layout_box_right_ie"></div>
 						<div class="layout_box_holder">
 
-TEXT TAB
+                                                    <a href="\profile\new_character" alt="add character">Add character</a>
 
 						</div>
 					</div>

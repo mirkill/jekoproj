@@ -33,6 +33,10 @@ class Profile extends Controller {
 	
 	return $this->clan_model->create_clan($name, $lvl, $server);
 	}
+
+        function new_character(){
+            echo "character";
+        }
 }
 
 /* End of file welcome.php */
