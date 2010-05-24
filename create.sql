@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 -- 
 -- Хост: localhost
--- Время создания: Май 23 2010 г., 23:23
+-- Время создания: Май 25 2010 г., 00:07
 -- Версия сервера: 5.0.45
 -- Версия PHP: 5.2.4
 -- 
@@ -180,43 +180,95 @@ INSERT INTO `notifications` VALUES (71, 1, 'Clan join request', 'Yor request to 
 -- --------------------------------------------------------
 
 -- 
--- Структура таблицы `profession`
+-- Структура таблицы `professions`
 -- 
 
-CREATE TABLE `profession` (
+CREATE TABLE `professions` (
   `id` int(3) unsigned NOT NULL auto_increment,
   `rass` enum('hum','elf','delf','orc','dwarf','kam') default NULL,
   `class` enum('fig','mys') default NULL,
   `prof_name` varchar(20) default NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
+) ENGINE=MyISAM AUTO_INCREMENT=75 DEFAULT CHARSET=utf8 AUTO_INCREMENT=75 ;
 
 -- 
--- Дамп данных таблицы `profession`
+-- Дамп данных таблицы `professions`
 -- 
 
-INSERT INTO `profession` VALUES (1, 'hum', 'fig', 'warlord');
-INSERT INTO `profession` VALUES (2, 'hum', 'fig', 'gladiator');
-INSERT INTO `profession` VALUES (3, 'hum', 'fig', 'Paladin');
-INSERT INTO `profession` VALUES (4, 'hum', 'fig', 'Dark Avenger');
-INSERT INTO `profession` VALUES (5, 'hum', 'fig', 'Treasure Hunter');
-INSERT INTO `profession` VALUES (6, 'hum', 'fig', 'Hawkeye');
-INSERT INTO `profession` VALUES (7, 'hum', 'fig', 'Dreadnought');
-INSERT INTO `profession` VALUES (8, 'hum', 'fig', 'Duelist');
-INSERT INTO `profession` VALUES (9, 'hum', 'fig', 'Phoneix Knight');
-INSERT INTO `profession` VALUES (10, 'hum', 'fig', 'Hell Knight');
-INSERT INTO `profession` VALUES (11, 'hum', 'fig', 'Adventurer');
-INSERT INTO `profession` VALUES (12, 'hum', 'fig', 'Sagittarius');
-INSERT INTO `profession` VALUES (13, 'hum', 'mys', 'Sorcerer');
-INSERT INTO `profession` VALUES (14, 'hum', 'mys', 'Necromancer');
-INSERT INTO `profession` VALUES (15, 'hum', 'mys', 'Warlock');
-INSERT INTO `profession` VALUES (16, 'hum', 'mys', 'Bishop');
-INSERT INTO `profession` VALUES (17, 'hum', 'mys', 'Prophet');
-INSERT INTO `profession` VALUES (18, 'hum', 'mys', 'Archemage');
-INSERT INTO `profession` VALUES (19, 'hum', 'mys', 'Soultaker');
-INSERT INTO `profession` VALUES (20, 'hum', 'mys', 'Arcana Lord');
-INSERT INTO `profession` VALUES (21, 'hum', 'mys', 'Cardinal');
-INSERT INTO `profession` VALUES (22, 'hum', 'mys', 'Hierophant');
+INSERT INTO `professions` VALUES (1, 'hum', 'fig', 'warlord');
+INSERT INTO `professions` VALUES (2, 'hum', 'fig', 'gladiator');
+INSERT INTO `professions` VALUES (3, 'hum', 'fig', 'Paladin');
+INSERT INTO `professions` VALUES (4, 'hum', 'fig', 'Dark Avenger');
+INSERT INTO `professions` VALUES (5, 'hum', 'fig', 'Treasure Hunter');
+INSERT INTO `professions` VALUES (6, 'hum', 'fig', 'Hawkeye');
+INSERT INTO `professions` VALUES (7, 'hum', 'fig', 'Dreadnought');
+INSERT INTO `professions` VALUES (8, 'hum', 'fig', 'Duelist');
+INSERT INTO `professions` VALUES (9, 'hum', 'fig', 'Phoneix Knight');
+INSERT INTO `professions` VALUES (10, 'hum', 'fig', 'Hell Knight');
+INSERT INTO `professions` VALUES (11, 'hum', 'fig', 'Adventurer');
+INSERT INTO `professions` VALUES (12, 'hum', 'fig', 'Sagittarius');
+INSERT INTO `professions` VALUES (13, 'hum', 'mys', 'Sorcerer');
+INSERT INTO `professions` VALUES (14, 'hum', 'mys', 'Necromancer');
+INSERT INTO `professions` VALUES (15, 'hum', 'mys', 'Warlock');
+INSERT INTO `professions` VALUES (16, 'hum', 'mys', 'Bishop');
+INSERT INTO `professions` VALUES (17, 'hum', 'mys', 'Prophet');
+INSERT INTO `professions` VALUES (18, 'hum', 'mys', 'Archemage');
+INSERT INTO `professions` VALUES (19, 'hum', 'mys', 'Soultaker');
+INSERT INTO `professions` VALUES (20, 'hum', 'mys', 'Arcana Lord');
+INSERT INTO `professions` VALUES (21, 'hum', 'mys', 'Cardinal');
+INSERT INTO `professions` VALUES (22, 'hum', 'mys', 'Hierophant');
+INSERT INTO `professions` VALUES (23, 'elf', 'fig', 'Temple Knight');
+INSERT INTO `professions` VALUES (24, 'elf', 'fig', 'Sword Singer');
+INSERT INTO `professions` VALUES (25, 'elf', 'fig', 'Plainswalker');
+INSERT INTO `professions` VALUES (26, 'elf', 'fig', 'Silver Ranger');
+INSERT INTO `professions` VALUES (27, 'elf', 'fig', 'Evas Templar');
+INSERT INTO `professions` VALUES (28, 'elf', 'fig', 'Sword Muse');
+INSERT INTO `professions` VALUES (29, 'elf', 'fig', 'Wind Rider');
+INSERT INTO `professions` VALUES (30, 'elf', 'fig', 'Moonlightsentinel');
+INSERT INTO `professions` VALUES (31, 'elf', 'mys', 'Spellsinger');
+INSERT INTO `professions` VALUES (32, 'elf', 'mys', 'Elemental Summoner');
+INSERT INTO `professions` VALUES (33, 'elf', 'mys', 'Elven Elder');
+INSERT INTO `professions` VALUES (34, 'elf', 'mys', 'Mystic Muse');
+INSERT INTO `professions` VALUES (35, 'elf', 'mys', 'Elemental Master');
+INSERT INTO `professions` VALUES (36, 'elf', 'mys', 'Evas Seint');
+INSERT INTO `professions` VALUES (37, 'delf', 'fig', 'Shillien Knight');
+INSERT INTO `professions` VALUES (38, 'delf', 'fig', 'Blade Dancer');
+INSERT INTO `professions` VALUES (39, 'delf', 'fig', 'Abyss Walker');
+INSERT INTO `professions` VALUES (40, 'delf', 'fig', 'Phantom Ranger');
+INSERT INTO `professions` VALUES (41, 'delf', 'fig', 'Shillien Templar');
+INSERT INTO `professions` VALUES (42, 'delf', 'fig', 'Spectral Dancer');
+INSERT INTO `professions` VALUES (43, 'delf', 'fig', 'Ghost Hunter');
+INSERT INTO `professions` VALUES (44, 'delf', 'fig', 'Ghost Sentinel');
+INSERT INTO `professions` VALUES (45, 'delf', 'mys', 'Phantom Summoner');
+INSERT INTO `professions` VALUES (46, 'delf', 'mys', 'Spellhowler');
+INSERT INTO `professions` VALUES (47, 'delf', 'mys', 'Shillien Elder');
+INSERT INTO `professions` VALUES (48, 'delf', 'mys', 'Storm Screamer');
+INSERT INTO `professions` VALUES (49, 'delf', 'mys', 'Spectral Master');
+INSERT INTO `professions` VALUES (50, 'delf', 'mys', 'Shillien Saint');
+INSERT INTO `professions` VALUES (51, 'orc', 'fig', 'Destroyer');
+INSERT INTO `professions` VALUES (52, 'orc', 'fig', 'Tyrant');
+INSERT INTO `professions` VALUES (53, 'orc', 'fig', 'Titan');
+INSERT INTO `professions` VALUES (54, 'orc', 'fig', 'Grand Khavatari');
+INSERT INTO `professions` VALUES (55, 'orc', 'mys', 'Overlord');
+INSERT INTO `professions` VALUES (56, 'orc', 'mys', 'Warcryer');
+INSERT INTO `professions` VALUES (57, 'orc', 'mys', 'Dominator');
+INSERT INTO `professions` VALUES (58, 'orc', 'mys', 'Doomcrayer');
+INSERT INTO `professions` VALUES (59, 'dwarf', 'fig', 'Bounty Hunter');
+INSERT INTO `professions` VALUES (60, 'dwarf', 'fig', 'Fortune Seeker');
+INSERT INTO `professions` VALUES (61, 'dwarf', 'fig', 'Warsmith');
+INSERT INTO `professions` VALUES (62, 'dwarf', 'fig', 'Maestro');
+INSERT INTO `professions` VALUES (63, 'kam', 'fig', 'Berserker');
+INSERT INTO `professions` VALUES (64, 'kam', 'fig', 'Doombringer');
+INSERT INTO `professions` VALUES (65, 'kam', 'fig', 'Inspector');
+INSERT INTO `professions` VALUES (66, 'kam', 'fig', 'Judicator');
+INSERT INTO `professions` VALUES (67, 'kam', 'fig', 'Soul Breaker');
+INSERT INTO `professions` VALUES (68, 'kam', 'fig', 'Soul Hound');
+INSERT INTO `professions` VALUES (69, 'kam', 'mys', 'Inspector');
+INSERT INTO `professions` VALUES (70, 'kam', 'mys', 'Judicator');
+INSERT INTO `professions` VALUES (71, 'kam', 'mys', 'Arbalester');
+INSERT INTO `professions` VALUES (72, 'kam', 'mys', 'Trickster');
+INSERT INTO `professions` VALUES (73, 'kam', 'mys', 'Soul Breaker');
+INSERT INTO `professions` VALUES (74, 'kam', 'mys', 'Soul Hound');
 
 -- --------------------------------------------------------
 

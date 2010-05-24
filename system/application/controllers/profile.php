@@ -12,11 +12,8 @@ class Profile extends Controller {
 	function index()
 	{
 		//$this->load->view('welcome_message');
-		if(!$this->session->userdata('username')){
-		$params['view'] = array('view_path' => '/', 'view_name' => 'no_acces');
-        $this->load->view('index', $params);
-		    return;
-		}
+		$this->check_login();
+
 		$params['notification'] = $this->notification_model->get_notification('5');
 		$params['clan'] = $this->clan_model->get_clan_info($this->session->userdata('clan_id'));
 		$params['join_request'] = $this->clan_model->check_join_request($this->session->userdata('id'));
@@ -34,8 +31,17 @@ class Profile extends Controller {
 	return $this->clan_model->create_clan($name, $lvl, $server);
 	}
 
+        function check_login(){
+            if(!$this->session->userdata('username')){
+		$params['view'] = array('view_path' => '/', 'view_name' => 'no_acces');
+                $this->load->view('index', $params);
+		    return;
+		}
+        }
         function new_character(){
-            echo "character";
+            $this->check_login();
+            $params['view'] = array('view_path' => '/', 'view_name' => 'new_character');
+            $this->load->view('index', $params);
         }
 }
 
